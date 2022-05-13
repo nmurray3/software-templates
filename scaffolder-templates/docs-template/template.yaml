@@ -28,6 +28,10 @@ spec:
           title: Description
           type: string
           description: A description for the component
+        TestBool:
+          title: TestBool
+          type: bool
+          description: TestBool
         owner:
           title: Owner
           type: string
