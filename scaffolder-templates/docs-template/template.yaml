@@ -28,22 +28,14 @@ spec:
           title: Description
           type: string
           description: A description for the component
-        TestBool1:
-          title: TestBool1
-          type: bool
-          description: TestBool1
-        TestBool2:
-          title: TestBool2
+        TestBool:
+          title: Test Boolean
           type: boolean
-          description: TestBool2
-        TestCheckbox:
-          title: TestCheckbox
-          type: checkbox
-          description: TestCheckbox
+          description: TestBool
         TestNumber:
-          title: TestNumber
+          title: Test Number
           type: number
-          description: TestNumber
+          description: Enter a number
         owner:
           title: Owner
           type: string
