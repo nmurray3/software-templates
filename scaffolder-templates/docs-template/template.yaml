@@ -65,7 +65,7 @@ spec:
       name: Template Docs Skeleton
       action: fetch:template
       input:
-        url: ./skeleton
+        url: https://github.com/nmurray3/software-templates/tree/main/scaffolder-templates/docs-template/skeleton
         values:
           name: ${{ parameters.name }}
           description: ${{ parameters.description }}
@@ -77,7 +77,7 @@ spec:
       if: ${{ parameters.TestBool }}
       action: fetch:template
       input:
-        url: ./skeleton-infra
+        url: https://github.com/nmurray3/software-templates/tree/main/scaffolder-templates/docs-template/skeleton-infra
         values:
           name: ${{ parameters.name }}
           description: ${{ parameters.description }}
