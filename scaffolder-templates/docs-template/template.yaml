@@ -33,10 +33,10 @@ spec:
           title: Test Boolean
           type: boolean
           description: TestBool
-        TestNumber:
-          title: Test Number
-          type: number
-          description: Enter a number
+        logText:
+          title: Log Text
+          type: string
+          description: Enter some text to log
         owner:
           title: Owner
           type: string
@@ -84,13 +84,19 @@ spec:
           destination: ${{ parameters.repoUrl | parseRepoUrl }}
           owner: ${{ parameters.owner }}
           
-    - id: publish
-      name: Publish
-      action: publish:azure
+    - id: log-text
+      name: Lot text message
+      action: wooliesx:log-text
       input:
-        allowedHosts: ["dev.azure.com"]
-        description: This is ${{ parameters.name }}
-        repoUrl: ${{ parameters.repoUrl }}
+        text: ${{ parameters.logText }}
+          
+#     - id: publish
+#       name: Publish
+#       action: publish:azure
+#       input:
+#         allowedHosts: ["dev.azure.com"]
+#         description: This is ${{ parameters.name }}
+#         repoUrl: ${{ parameters.repoUrl }}
 
     - id: register
       name: Register
