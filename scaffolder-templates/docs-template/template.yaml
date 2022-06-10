@@ -90,13 +90,13 @@ spec:
       input:
         text: ${{ parameters.logText }}
           
-#     - id: publish
-#       name: Publish
-#       action: publish:azure
-#       input:
-#         allowedHosts: ["dev.azure.com"]
-#         description: This is ${{ parameters.name }}
-#         repoUrl: ${{ parameters.repoUrl }}
+    - id: publish
+      name: Publish
+      action: publish:azure
+      input:
+        allowedHosts: ["dev.azure.com"]
+        description: This is ${{ parameters.name }}
+        repoUrl: ${{ parameters.repoUrl }}
 
     - id: register
       name: Register
