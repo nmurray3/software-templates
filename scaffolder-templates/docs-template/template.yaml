@@ -89,6 +89,13 @@ spec:
       action: wooliesx:log-text
       input:
         text: ${{ parameters.logText }}
+        
+    - id: project-rename
+      name: Rename project
+      action: wooliesx:project-rename
+      input:
+        from: ${{ parameters.logText }}
+        to: ${{ parameters.logText }}
           
 #     - id: publish
 #       name: Publish
